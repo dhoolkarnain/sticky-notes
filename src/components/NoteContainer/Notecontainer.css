@@ -4,7 +4,9 @@
 .note-container h2 {
   margin-bottom: 20px;
 }
-.note-container-notes {
+.note-container-Note {
+  /* align-items: center; */
+  /* justify-content: center; */
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
