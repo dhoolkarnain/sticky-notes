@@ -18,12 +18,13 @@
   border: none;
 }
 .note-footer {
-  border-top: 2px solid white;
+  border-top: 2px solid rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  color: black;
 }
 .note-footer span {
   cursor: pointer;

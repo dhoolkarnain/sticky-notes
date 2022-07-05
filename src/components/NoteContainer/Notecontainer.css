@@ -1,8 +1,21 @@
 .note-container {
   height: 100%;
+  /* background-color: black; */
 }
 .note-container h2 {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  /* margin-top: 0px; */
+  /* justify-content: center; */
+}
+.note-container h2 span {
+  /* margin-bottom: 20px; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  color: yellow;
+  font-size: 40px;
 }
 .note-container-Note {
   /* align-items: center; */

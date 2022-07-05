@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import NoteContainer from "./components/NoteContainer/NoteContainer";
 import Sidebar from "./components/Sidebar/Sidebar";
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [notes, setNotes] = useState(
@@ -49,6 +50,7 @@ function App() {
         deleteNote={deleteNote}
         updateText={updateText}
       />
+      <Footer />
     </div>
   );
 }

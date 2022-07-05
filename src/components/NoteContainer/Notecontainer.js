@@ -13,7 +13,9 @@ export default function NoteContainer(props) {
   const notes = reverArray(props.notes);
   return (
     <div className="note-container">
-      <h2>Sticky Notes</h2>
+      <h2>
+        <span class="material-symbols-outlined">description</span> Sticky Notes
+      </h2>
       <div className="note-container-Note custom-scroll">
         {notes?.length > 0 ? (
           notes.map((item) => (
@@ -25,7 +27,20 @@ export default function NoteContainer(props) {
             />
           ))
         ) : (
-          <h3>No Note</h3>
+          <div
+            className="note custom-scroll"
+            style={{ backgroundColor: "#e4ee91" }}
+          >
+            <textarea
+              className="note_text custom-scroll"
+              defaultValue={
+                "Hello, This website is developed by @dhoolkarnain who is a highly competent IT professional and expert in designing websites. Click on plus icon to start making your notes."
+              }
+            />
+            <div className="note-footer">
+              <p>Edited: 24th August</p>
+            </div>
+          </div>
         )}
       </div>
     </div>
