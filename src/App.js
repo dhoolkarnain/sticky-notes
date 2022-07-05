@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Notecontainer from "./components/NoteContainer/Notecontainer";
+import "./App.css";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
+  const notes = [
+    {
+      text: "shjahjaka",
+      time: "3:12 AM",
+      color: "cyan",
+    },
+    {
+      text: "shjahjaka",
+      time: "3:12 AM",
+      color: "yellow",
+    },
+    {
+      text: "shjahjaka",
+      time: "3:12 AM",
+      color: "pink",
+    },
+    {
+      text: "shjahjaka",
+      time: "3:12 AM",
+      color: "orange",
+    },
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidebar />
+      <Notecontainer notes={notes} />
     </div>
   );
 }

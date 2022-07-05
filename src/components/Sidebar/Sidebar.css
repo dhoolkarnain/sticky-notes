@@ -1,0 +1,37 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.sidebar h1 {
+  /* border: 2px solid black; */
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  cursor: pointer;
+}
+.sidebar h1 span {
+  color: white;
+}
+.sidebar-list {
+  /* list-style: none; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  height: 0;
+  transition: 300ms;
+}
+.sidebar-list-active {
+  height: 300px;
+}
+.sidebar-list-item {
+  border-radius: 50px;
+  height: 24px;
+  width: 24px;
+  list-style: none;
+}
